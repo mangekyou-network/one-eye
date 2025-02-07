@@ -1,7 +1,7 @@
 *.ts
 !index.ts
-!character.ts
 .env
+!character.ts
 *.env
 .env*
 /data
