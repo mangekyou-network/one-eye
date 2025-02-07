@@ -57,3 +57,7 @@ You also may need to fix the lock file.
 ```
 pnpm install --fix-lockfile
 ```
+
+#### Future Work
+
+- Deploy stealth address smart contract for hidden trading orders (Arbitrum, Avalanche)
