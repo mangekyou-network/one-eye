@@ -451,6 +451,9 @@ importers:
       '@elizaos/plugin-quick-intel':
         specifier: workspace:*
         version: link:../packages/plugin-quick-intel
+      '@elizaos/plugin-rabbi-trader':
+        specifier: workspace:*
+        version: link:../packages/plugin-rabbi-trader
       '@elizaos/plugin-router-nitro':
         specifier: workspace:*
         version: link:../packages/plugin-router-nitro
@@ -505,9 +508,6 @@ importers:
       '@elizaos/plugin-ton':
         specifier: workspace:*
         version: link:../packages/plugin-ton
-      '@elizaos/plugin-trading':
-        specifier: workspace:*
-        version: link:../packages/plugin-trading
       '@elizaos/plugin-trikon':
         specifier: workspace:*
         version: link:../packages/plugin-trikon
@@ -4895,34 +4895,6 @@ importers:
       '@biomejs/biome':
         specifier: 1.5.3
         version: 1.5.3
-
-  packages/plugin-trading:
-    dependencies:
-      '@elizaos/core':
-        specifier: workspace:*
-        version: link:../core
-      '@elizaos/plugin-binance':
-        specifier: workspace:*
-        version: link:../plugin-binance
-      '@elizaos/plugin-coinbase':
-        specifier: workspace:*
-        version: link:../plugin-coinbase
-      '@elizaos/plugin-cookieswarm':
-        specifier: workspace:*
-        version: link:../plugin-cookieswarm
-      '@elizaos/plugin-rabbi-trader':
-        specifier: workspace:*
-        version: link:../plugin-rabbi-trader
-      tsup:
-        specifier: 8.3.5
-        version: 8.3.5(@swc/core@1.10.14(@swc/helpers@0.5.15))(jiti@2.4.2)(postcss@8.5.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0)
-      zod:
-        specifier: ^3.22.4
-        version: 3.24.1
-    devDependencies:
-      '@types/node':
-        specifier: ^20.0.0
-        version: 20.17.9
 
   packages/plugin-trikon:
     dependencies:
