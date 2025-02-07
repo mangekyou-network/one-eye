@@ -17,7 +17,7 @@ cp .env.example .env
 Note: 
 - Replace your Cookieswarm API key.
 - Replace the OPENAI_API_KEY with your own.
-- Switch the VERIFIABLE_INFERENCE to true to enable zkTLS inference.
+- Switch the `VERIFIABLE_INFERENCE_ENABLED` to true to enable zkTLS AI inference.
 
 #### Start Agent
 
