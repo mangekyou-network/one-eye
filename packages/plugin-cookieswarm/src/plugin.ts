@@ -8,20 +8,11 @@ import {
 
 export const cookieSwarmPlugin: Plugin = {
     name: "cookieswarm",
-    description: "CookieSwarm plugin for agent market analytics",
+    description: "CookieSwarm plugin for AI agent market analytics",
     actions: [
         getTwitterAgentAction,
         getContractAgentAction,
         getAgentsPagedAction,
         searchTweetsAction
-    ],
-    evaluators: [],
-    providers: []
-};
-
-export * from "./environment";
-export * from "./services";
-export * from "./types";
-export * from "./examples";
-
-export default cookieSwarmPlugin;
+    ]
+}; 
