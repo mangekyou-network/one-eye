@@ -1,0 +1,71 @@
+
+
+  MagicalInternetMoney
+    Deployment
+      - Test Announcer - ETH Transfer
+ownerBalance: 1000000000000000000000000
+ownerAllowanceToMagicalInternetMoney: 123456789123456789
+      owner: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+      tokenInfos: [[false,"0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",12345]]
+      transferAndAnnounceReceipt_1 ERC-20:
+        LogDescription {
+          fragment: EventFragment {
+            type: 'event',
+            inputs: [ [ParamType], [ParamType], [ParamType] ],
+            name: 'Transfer',
+            anonymous: false
+          },
+          name: 'Transfer',
+          signature: 'Transfer(address,address,uint256)',
+          topic: '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef',
+          args: Result(3) [
+            '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266',
+            '0x70997970C51812dc3A010C7d01b50e0d17dc79C8',
+            12345n
+          ]
+        }
+      transferAndAnnounceReceipt_1 Announcer:
+        LogDescription {
+          fragment: EventFragment {
+            type: 'event',
+            inputs: [ [ParamType], [ParamType], [ParamType], [ParamType], [ParamType] ],
+            name: 'Announcement',
+            anonymous: false
+          },
+          name: 'Announcement',
+          signature: 'Announcement(uint256,address,address,bytes,bytes)',
+          topic: '0x5f0eab8057630ba7676c49b4f21a0231414e79474595be8e4c432fbf6bf0f4e7',
+          args: Result(5) [
+            1n,
+            '0x70997970C51812dc3A010C7d01b50e0d17dc79C8',
+            '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0',
+            '0x1234',
+            '0xffeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee000000000000000000000000000000000000000000000000000000000000007b23b872ddcf7ed3acca5a467e9e704c703e8d87f634fb0fc90000000000000000000000000000000000000000000000000000000000003039'
+          ]
+        }
+      ✔ Test Announcer - ETH & Tokens Transfer (871ms)
+      owner: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+      registerKeysReceipt_1:
+        LogDescription {
+          fragment: EventFragment {
+            type: 'event',
+            inputs: [ [ParamType], [ParamType], [ParamType] ],
+            name: 'StealthMetaAddressSet',
+            anonymous: false
+          },
+          name: 'StealthMetaAddressSet',
+          signature: 'StealthMetaAddressSet(address,uint256,bytes)',
+          topic: '0x4e739a47dfa4fd3cfa92f8fe760cebe125565927e5c422cb28e7aa388a067af9',
+          args: Result(3) [
+            '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266',
+            1n,
+            '0x73743a6574683a3078303339343431643838326430636633333536356464613963373532393130663962623133313836353535343935633038316539643333653339313531383435366334303365613862616162303438366137623462363035366437376533356138663062353533343535306664666535336136393138303838356561313066626563623936'
+          ]
+        }
+      registrant: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+      ✔ Test Registry
+
+
+  2 passing (881ms)
+  1 pending
+

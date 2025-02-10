@@ -1,0 +1,23 @@
+{
+  "name": "stealth-limit-orders",
+  "version": "1.0.0",
+  "description": "Stealth limit orders using Uniswap V4 hooks",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:sepolia": "hardhat run scripts/deploy_v4_limit_order_sepolia.js --network base-sepolia"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "@uniswap/v4-core": "^1.0.0",
+    "@uniswap/v4-periphery": "^1.0.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "dotenv": "^16.4.1",
+    "ethers": "^6.9.1",
+    "hardhat": "^2.19.5"
+  }
+}

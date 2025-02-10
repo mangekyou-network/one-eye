@@ -1,0 +1,14 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+ffi = true
+remappings = [
+    '@uniswap/v4-core/=lib/periphery-next/lib/v4-core/',
+    '@uniswap/v4-periphery/=lib/periphery-next/src/',
+    '@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/',
+    'openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/',
+    'periphery-next/=lib/periphery-next/src/',
+    'forge-std/=lib/forge-std/src/',
+    'v4-core/=lib/periphery-next/lib/v4-core/src/'
+] 

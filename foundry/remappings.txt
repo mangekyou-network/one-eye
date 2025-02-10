@@ -1,0 +1,16 @@
+ds-test/=lib/forge-std/lib/ds-test/src/
+forge-gas-snapshot/=lib/periphery-next/lib/forge-gas-snapshot/src/
+forge-std/=lib/forge-std/src/
+openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/
+periphery-next/=lib/periphery-next/src/
+solmate/=lib/periphery-next/lib/v4-core/lib/solmate/src/
+v4-core/=lib/periphery-next/lib/v4-core/src/
+lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/
+lib/periphery-next:@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
+lib/periphery-next:@uniswap/v4-core/=lib/periphery-next/lib/v4-core/
+lib/periphery-next:ds-test/=lib/periphery-next/lib/forge-std/lib/ds-test/src/
+lib/periphery-next:forge-gas-snapshot/=lib/periphery-next/lib/forge-gas-snapshot/src/
+lib/periphery-next:forge-std/=lib/periphery-next/lib/forge-std/src/
+lib/periphery-next:openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/
+lib/periphery-next:solmate/=lib/periphery-next/lib/v4-core/lib/solmate/src/
+lib/periphery-next:v4-core/=lib/periphery-next/lib/v4-core/src/ 
