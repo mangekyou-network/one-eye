@@ -1,19 +1,37 @@
-import { type Plugin } from '@elizaos/core';
+import type { Plugin } from '@elizaos/core';
 import { StealthProvider } from './provider';
-import { generateStealthAddress, announceTransfer, scanAnnouncements } from './actions';
+import {
+    generateStealthAddressAction,
+    createLimitOrderAction,
+    getLimitOrderAction,
+    watchLimitOrderExecutionsAction
+} from './actions';
 
-const plugin: Plugin = {
-    name: '@elizaos/plugin-stealth',
-    version: '0.1.0',
-    description: 'Plugin for Base mainnet stealth address system',
-    provider: () => new StealthProvider(),
+// Initial banner
+console.log("\n┌════════════════════════════════════════┐");
+console.log("│          STEALTH PLUGIN                │");
+console.log("├────────────────────────────────────────┤");
+console.log("│  Initializing Stealth Plugin...        │");
+console.log("│  Version: 0.1.0                        │");
+console.log("└════════════════════════════════════════┘");
+
+const provider = new StealthProvider();
+
+export const stealthPlugin: Plugin = {
+    name: "[Stealth] Integration",
+    description: "Stealth address and limit order integration plugin",
+    providers: [provider],
+    evaluators: [],
+    services: [],
     actions: [
-        generateStealthAddress,
-        announceTransfer,
-        scanAnnouncements
+        generateStealthAddressAction,
+        createLimitOrderAction,
+        getLimitOrderAction,
+        watchLimitOrderExecutionsAction
     ]
 };
 
-export default plugin;
+export default stealthPlugin;
+export * from './interfaces';
 export * from './provider';
 export * from './actions'; 

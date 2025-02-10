@@ -6,14 +6,15 @@
     "types": "dist/index.d.ts",
     "dependencies": {
         "@elizaos/core": "workspace:*",
-        "@base-org/base-sdk": "^0.1.0",
         "ethers": "^6.11.0",
-        "viem": "^2.7.1"
+        "viem": "^2.7.1",
+        "tsup": "8.3.5"
     },
     "devDependencies": {
         "@biomejs/biome": "1.9.4",
-        "tsup": "8.3.5",
-        "vitest": "^3.0.0"
+        "@types/node": "^20.11.17",
+        "vitest": "^3.0.0",
+        "typescript": "^5.3.3"
     },
     "scripts": {
         "build": "tsup --format esm --dts",

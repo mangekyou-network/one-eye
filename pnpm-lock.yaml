@@ -4641,6 +4641,34 @@ importers:
         specifier: 1.5.3
         version: 1.5.3
 
+  packages/plugin-stealth:
+    dependencies:
+      '@elizaos/core':
+        specifier: workspace:*
+        version: link:../core
+      ethers:
+        specifier: ^6.11.0
+        version: 6.13.5(bufferutil@4.0.9)(utf-8-validate@6.0.5)
+      tsup:
+        specifier: 8.3.5
+        version: 8.3.5(@swc/core@1.10.14(@swc/helpers@0.5.15))(jiti@2.4.2)(postcss@8.5.1)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.7.0)
+      viem:
+        specifier: 2.21.58
+        version: 2.21.58(bufferutil@4.0.9)(typescript@5.7.3)(utf-8-validate@6.0.5)(zod@3.24.1)
+    devDependencies:
+      '@biomejs/biome':
+        specifier: 1.9.4
+        version: 1.9.4
+      '@types/node':
+        specifier: ^20.11.17
+        version: 20.17.9
+      typescript:
+        specifier: ^5.3.3
+        version: 5.7.3
+      vitest:
+        specifier: ^3.0.0
+        version: 3.0.5(@types/debug@4.1.12)(@types/node@20.17.9)(jsdom@25.0.1(bufferutil@4.0.9)(canvas@2.11.2(encoding@0.1.13))(utf-8-validate@6.0.5))(terser@5.38.0)
+
   packages/plugin-story:
     dependencies:
       '@elizaos/core':
